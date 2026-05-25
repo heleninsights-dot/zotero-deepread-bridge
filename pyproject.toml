@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools-scm>=8"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "zotero-deepread-bridge"
+dynamic = ["version"]
+description = "Export PDFs from a Zotero collection and hand them to AI-powered deep-reading workflows"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "heleninsights-dot"},
+]
+keywords = ["zotero", "obsidian", "pdf", "deepread", "literature-review", "research"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Text Processing",
+]
+
+[project.scripts]
+zotero-deepread = "zotero_deepread_bridge.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/heleninsights-dot/zotero-deepread-bridge"
+Repository = "https://github.com/heleninsights-dot/zotero-deepread-bridge"
+Issues = "https://github.com/heleninsights-dot/zotero-deepread-bridge/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.dynamic]
+version = {attr = "zotero_deepread_bridge.__version__"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

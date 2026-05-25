@@ -1,0 +1,13 @@
+zotero:
+  database: ~/Zotero/zotero.sqlite
+  data_directory: ~/Zotero
+
+export:
+  include_subcollections: true
+  mode: copy
+  pdf_output_root: Research/Zotero PDF Inbox
+
+deepread:
+  command: phd-deepread
+  create_canvases: true
+  output_root: Research/DeepRead Output
