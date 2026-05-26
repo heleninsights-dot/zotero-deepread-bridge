@@ -94,6 +94,8 @@ curl -o ~/.claude/skills/zotero-deepread-bridge/SKILL.md \
 
 That's it. Restart Claude Code and the skill activates automatically.
 
+---
+
 **How to use.** Talk to Claude Code in English or Chinese — both work. 用中文或英文跟 Claude Code 说都可以：
 
 ```
@@ -119,6 +121,8 @@ Export my Zotero collection "YourCollection" and deep-read all the papers
 # Requires Python 3.10+
 pip install git+https://github.com/heleninsights-dot/zotero-deepread-bridge.git
 ```
+
+---
 
 **How to use.** Commands are in English (like any terminal tool — `git`, `pip`,
 etc.), but collection names work in any language including Chinese.
@@ -154,6 +158,8 @@ curl -O https://raw.githubusercontent.com/heleninsights-dot/zotero-deepread-brid
 
 That's it. The script has zero dependencies beyond Python itself.
 
+
+---
 
 **How to use.** Same as Tier 2 — commands are English, collection names work in
 any language.
