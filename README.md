@@ -4,16 +4,16 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![中文版本](https://img.shields.io/badge/README-%E4%B8%AD%E6%96%87%E7%89%88-green)](README.zh-CN.md)
 
-**Export PDFs from a Zotero collection, then run AI-powered deep-reading to
+**Export PDFs from a Zotero collection, then run AI-powered deepread to
 create Obsidian-ready literature notes — in one command.**
 
-> Pairs with [phd-deepread-workflow](https://github.com/heleninsights-dot/phd-deepread-workflow) — use `deepread` to run the full pipeline: Zotero → PDFs → AI deep-reading → Obsidian notes + canvases.
+> Pairs with [phd-deepread-workflow](https://github.com/heleninsights-dot/phd-deepread-workflow) — use `deepread` to run the full pipeline: Zotero → PDFs → AI deepread → Obsidian notes + canvases.
 
 ## What You'll Get
 
 - **Traceable PDFs** — named `[ZoteroKey] Author - Year - Title.pdf`. Type the key into Zotero and you're back at the original entry.
 - **A manifest** — `zotero-pdf-manifest.csv` + `.json` maps every file to its Zotero item.
-- **AI deep-reading (optional)** — run `deepread` instead of `export` and get structured literature notes + `.canvas` critical-thinking maps, ready for Obsidian.
+- **AI deepread (optional)** — run `deepread` instead of `export` and get structured literature notes + `.canvas` critical-thinking maps, ready for Obsidian.
 
 ## Here's what lands in your Obsidian vault:
 
@@ -33,7 +33,7 @@ Research/
 
 ## Why This Exists
 
-**Obsidian Zotero Integration** pulls citations into your vault but doesn't materialize PDFs. The bridge fills that gap: one command exports an entire Zotero collection with traceable filenames, a manifest, and optional AI deep-reading.
+**Obsidian Zotero Integration** pulls citations into your vault but doesn't materialize PDFs. The bridge fills that gap: one command exports an entire Zotero collection with traceable filenames, a manifest, and optional AI deepread.
 
 ## Choose Your Installation
 
@@ -63,13 +63,13 @@ That's it. Restart Claude Code and the skill activates automatically.
 **How to use.** Talk to Claude Code in English or Chinese — both work. 用中文或英文跟 Claude Code 说都可以：
 
 ```
-Export my Zotero collection "YourCollection" and deep-read all the papers
+Export my Zotero collection "YourCollection" and deepread all the papers
 
-导出我的 Zotero 收藏夹「YourCollection」并 deep-read 所有论文
+导出我的 Zotero 收藏夹「YourCollection」并 deepread 所有论文
 ```
 
 > Already have the **phd-deepread** skill? This is its companion. Install both
-> and Claude Code handles the full pipeline: Zotero → PDFs → deep-read →
+> and Claude Code handles the full pipeline: Zotero → PDFs → deepread →
 > Obsidian notes + canvases.
 
 ---
@@ -185,7 +185,7 @@ Each file is named like:
 A manifest (`zotero-pdf-manifest.csv` + `.json`) is written alongside the PDFs
 so you can trace every file back to its Zotero item.
 
-### 4. Export and deep-read in one step
+### 4. Export and deepread in one step
 
 ```bash
 zotero-deepread deepread "YourCollection" \
