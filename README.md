@@ -11,27 +11,9 @@ create Obsidian-ready literature notes — in one command.**
 
 ## What You'll Get
 
-### 1. Traceable PDFs, named by Zotero key
-
-Each PDF filename starts with its Zotero key — a permanent, unique ID that
-never changes, even if you rename the item or move it between collections.
-Type the key into Zotero's search bar and you're back at the original entry.
-
-```text
-[ABC123] Smith - 2023 - Functional analysis of reward circuitry.pdf
-[DEF456] Chen - 2024 - 方法论研究.pdf
-```
-
-### 2. A traceable manifest
-
-Every export writes `zotero-pdf-manifest.csv` (and `.json`) alongside the
-PDFs. Each row records the key, collection path, title, and authors — open it
-in Excel or Obsidian to trace any file back to Zotero.
-
-### 3. AI deep-reading (optional)
-
-Run `deepread` instead of `export` and you also get structured Markdown
-literature notes and `.canvas` critical-thinking maps, ready for Obsidian.
+- **Traceable PDFs** — named `[ZoteroKey] Author - Year - Title.pdf`. Type the key into Zotero and you're back at the original entry.
+- **A manifest** — `zotero-pdf-manifest.csv` + `.json` maps every file to its Zotero item.
+- **AI deep-reading (optional)** — run `deepread` instead of `export` and get structured literature notes + `.canvas` critical-thinking maps, ready for Obsidian.
 
 ## Here's what lands in your Obsidian vault:
 
@@ -49,27 +31,9 @@ Research/
       YourCollection.canvas
 ```
 
-Without the bridge, dragging PDFs out of Zotero gives you files with random
-names and no connection back. With the bridge, every file is named, organized,
-and traceable.
-
 ## Why This Exists
 
-**Obsidian Zotero Integration** pulls citation metadata into your vault but
-doesn't materialize PDF files. The bridge fills that gap:
-
-```text
-Zotero collection  →  PDF folder + manifest  →  AI deep-reading  →  Obsidian notes + canvases
-```
-
-| Without the bridge | With the bridge |
-|---|---|
-| Drag PDFs out one by one | One command for the whole collection |
-| Random filenames (`A7X93K2F.pdf`) | `[ZoteroKey] Author - Year - ShortTitle.pdf` |
-| No link back to Zotero | Manifest CSV + key in filename |
-| Manual per-paper processing | Batch AI deep-reading in one step |
-
-This tool complements Obsidian Zotero Integration — use both.
+**Obsidian Zotero Integration** pulls citations into your vault but doesn't materialize PDFs. The bridge fills that gap: one command exports an entire Zotero collection with traceable filenames, a manifest, and optional AI deep-reading.
 
 ## Choose Your Installation
 
